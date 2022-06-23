@@ -10,7 +10,7 @@ this is the phone directory which is built-in c++ language and the concept of da
 
 ## Introduction
   This project is to manage the contact list.
-
+  
 
 ## Key Features
 - [Add New Contact](https://github.com/itsyadavRajkumar/Phone-Directory/blob/main/SS/New.JPG)
@@ -23,7 +23,7 @@ this is the phone directory which is built-in c++ language and the concept of da
 
 ## Technologies used
     Programming Language: c++.
-    Data Structure : sorting, searching, doubly linked list.
+    Data Structure: Sorting, Searching, Doubly Linked List.
     
 ## Author
 
