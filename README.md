@@ -9,8 +9,19 @@ this is the phone directory which is built-in c++ language and the concept of da
   * [Author](#author)
 
 ## Introduction
-  This project is to manage the contact list.
-  
+  In This project,
+  all contact is sorted in lexicographical order, and when a new contact is created at that time we connect his original position.
+
+  for searching in this project user can search with name(first name, last name), mobile number, email id., and the searching process is done by user entering in     any case(lower case, upper case) of character like- {RaJkuMAr, RAJKUMAR, rajkumar,......}.
+
+  and when the user wanna delete the contact at that time we remove the current node(which node the user wanna remove) and connect the previous node to the next node.
+
+  and we can also update the existing contact and when the user updates any contact then maybe he is not now in the correct position then at that time we connect to his original new position means sort in lexicographical order.
+
+  In the delete all contacts: we can delete all contacts and return an empty set.
+
+  In the view all contacts: we print all contacts.
+
 
 ## Key Features
 - [Add New Contact](https://github.com/itsyadavRajkumar/Phone-Directory/blob/main/SS/New.JPG)
@@ -23,7 +34,7 @@ this is the phone directory which is built-in c++ language and the concept of da
 
 ## Technologies used
     Programming Language: c++.
-    Data Structure: Sorting, Searching, Doubly Linked List.
+    Data Structure : sorting, searching, doubly linked list.
     
 ## Author
 
