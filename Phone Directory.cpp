@@ -14,8 +14,7 @@ public:
         this->name = name;
         this->mobile = mobile;
         this->email = email;
-        next = NULL;
-        pre = NULL;
+        next = pre = NULL;
     }
 };
 
@@ -26,10 +25,10 @@ private:
     void Sort(contactNode *newContact) {
         if (head != NULL) {
             contactNode *temp = head;
+            string NewNode_name = newContact->name[0];
+            transform(NewNode_name.begin(), NewNode_name.end(), NewNode_name.begin(), ::tolower);
             while (temp != NULL) {
-                string NewNode_name = newContact->name[0];
                 string OldNode_name = temp->name[0];
-                transform(NewNode_name.begin(), NewNode_name.end(), NewNode_name.begin(), ::tolower);
                 transform(OldNode_name.begin(), OldNode_name.end(), OldNode_name.begin(), ::tolower);
                 int res = NewNode_name.compare(OldNode_name);
 
@@ -74,7 +73,7 @@ private:
         for (int i = 0; i < temp.size(); ++i) {
             cout << i << " : " << temp[i]->name[0] << ' ' << temp[i]->name[1] << "\t";
             for (auto j = 0; j < (temp[i]->mobile).size(); ++j)
-                cout << "+91-" << temp[i]->mobile[j] << "\n";
+                cout << "+91 " << temp[i]->mobile[j] << "\n";
             cout << "\t";
             for (auto j = 0; j < (temp[i]->email).size(); ++j)
                 cout << temp[i]->email[j] << "\n";
