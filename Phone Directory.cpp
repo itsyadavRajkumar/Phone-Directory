@@ -112,7 +112,7 @@ protected:
         cout << "\n\n------Contact Save Successful------\n\n";
     }
 
-
+    // TC : O(n)
     void Delete() {
         vector<contactNode*> searchResult = search();
         if (searchResult.size() == 0) return;
@@ -181,7 +181,7 @@ protected:
 
 
     // TC : O(n)
-    // SC : O()
+    // SC : O(1)
     void view() {
         contactNode *temp = head;
         if (!head) {
@@ -193,7 +193,7 @@ protected:
         while (temp != NULL) {
             cout << c << ". " << temp->name[0] << ' ' << temp->name[1] << "\t";
             for (auto i = 0; i < (temp->mobile).size(); ++i)
-                cout << "+91-" << temp->mobile[i] << "\t";
+                cout << "+91 " << temp->mobile[i] << "\t";
             cout << "\t";
             for (auto i = 0; i < (temp->email).size(); ++i)
                 cout << temp->email[i] << "\n";
